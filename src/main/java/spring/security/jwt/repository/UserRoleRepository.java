@@ -8,8 +8,6 @@ import java.util.List;
 
 /**
  * UserRoleRepository
- *
- * @author star
  */
 public interface UserRoleRepository extends JpaRepository<UserRole, Long> {
 

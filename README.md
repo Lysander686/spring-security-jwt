@@ -61,7 +61,7 @@ WebCorsConfiguration 配置类，主要解决 HTTP 请求跨域问题。这里�
 /**
  * WebCorsConfiguration 跨域配置
  *
- * @author star
+ * 
  */
 @Configuration
 public class WebCorsConfiguration implements WebMvcConfigurer {
@@ -116,7 +116,7 @@ SecurityConfiguration 配置类继承了 Spring Security 的 WebSecurityConfigur
 /**
  * Web 安全配置
  *
- * @author star
+ * 
  **/
 @Configuration
 @EnableWebSecurity
@@ -208,7 +208,7 @@ JwtAuthorizationFilter 用户请求授权过滤器，用于从用户请求中获
  * 提供请求授权功能。用于处理所有 HTTP 请求，并检查是否存在带有正确 token 的 Authorization 标头。
  * 如果 token 有效，则过滤器会将身份验证数据添加到 Spring 的安全上下文中，并授权此次请求访问资源。</p>
  *
- * @author star
+ * 
  */
 public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
 
@@ -270,7 +270,7 @@ JwtUtils 工具类，在用户登录成功后，主要用于生成 token，并�
 /**
  * Jwt 工具类，用于生成、解析与验证 token
  *
- * @author star
+ * 
  **/
 public final class JwtUtils {
 

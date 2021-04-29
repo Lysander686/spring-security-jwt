@@ -18,8 +18,6 @@ import spring.security.jwt.service.AuthService;
 
 /**
  * AuthResource
- *
- * @author star
  */
 @RestController
 @RequestMapping("/api/auth")

@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 public class SpringSecurityApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringSecurityApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringSecurityApplication.class, args);
+    }
 }

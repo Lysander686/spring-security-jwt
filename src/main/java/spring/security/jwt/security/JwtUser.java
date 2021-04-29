@@ -4,8 +4,6 @@ import spring.security.jwt.dto.UserDTO;
 
 /**
  * JwtUserDTO
- *
- * @author star
  */
 public class JwtUser {
 

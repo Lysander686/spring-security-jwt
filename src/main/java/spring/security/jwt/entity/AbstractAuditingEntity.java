@@ -14,8 +14,6 @@ import java.time.Instant;
 
 /**
  * 抽象实体类
- *
- * @author star
  */
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)

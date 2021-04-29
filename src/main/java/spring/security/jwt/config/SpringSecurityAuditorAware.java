@@ -8,8 +8,6 @@ import java.util.Optional;
 
 /**
  * 监听 @CreateBy @LastModifiedBy 自动注入用户名
- *
- * @author star
  **/
 @Configuration
 public class SpringSecurityAuditorAware implements AuditorAware<String> {

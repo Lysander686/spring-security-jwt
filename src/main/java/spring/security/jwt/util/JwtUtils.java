@@ -11,13 +11,14 @@ import spring.security.jwt.constant.SecurityConstants;
 import spring.security.jwt.constant.UserRoleConstants;
 
 import javax.xml.bind.DatatypeConverter;
-import java.util.*;
+import java.util.Collections;
+import java.util.Date;
+import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
  * Jwt 工具类，用于生成、解析与验证 token
- *
- * @author star
  **/
 public final class JwtUtils {
 
@@ -59,7 +60,6 @@ public final class JwtUtils {
 
     /**
      * 验证 token 是否有效
-     *
      * <p>
      * 如果解析失败，说明 token 是无效的
      *
@@ -91,7 +91,7 @@ public final class JwtUtils {
     public static Authentication getAuthentication(String token) {
         Claims claims = getTokenBody(token);
         // 获取用户角色字符串
-        List<String> roles = (List<String>)claims.get(SecurityConstants.TOKEN_ROLE_CLAIM);
+        List<String> roles = (List<String>) claims.get(SecurityConstants.TOKEN_ROLE_CLAIM);
         List<SimpleGrantedAuthority> authorities =
                 Objects.isNull(roles) ? Collections.singletonList(new SimpleGrantedAuthority(UserRoleConstants.ROLE_USER)) :
                         roles.stream()

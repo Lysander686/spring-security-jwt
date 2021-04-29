@@ -7,8 +7,6 @@ import spring.security.jwt.entity.User;
 
 /**
  * UserMapper
- *
- * @author star
  */
 @Service
 public class UserMapper {

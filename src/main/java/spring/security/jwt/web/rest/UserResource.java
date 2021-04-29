@@ -12,8 +12,6 @@ import spring.security.jwt.service.UserService;
 
 /**
  * UserResource
- *
- * @author star
  */
 @RestController
 @RequestMapping("/api/users")

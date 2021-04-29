@@ -6,7 +6,6 @@ import org.springframework.core.Ordered;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -15,19 +14,14 @@ import java.util.Collections;
 
 /**
  * WebCorsConfiguration 跨域配置
- *
- * @author star
  */
 @Configuration
 public class WebCorsConfiguration implements WebMvcConfigurer {
 
-    /**
-     * 设置swagger为默认主页
-     */
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("redirect:/swagger-ui.html");
-        registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
+        registry.addViewController("/swagger").setViewName("redirect:/swagger-ui.html");
+        registry.setOrder(Ordered.LOWEST_PRECEDENCE);
         WebMvcConfigurer.super.addViewControllers(registry);
     }
 

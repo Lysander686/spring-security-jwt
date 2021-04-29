@@ -6,8 +6,6 @@ import javax.validation.constraints.Size;
 
 /**
  * UserDTO
- *
- * @author star
  **/
 public class UserRegisterDTO {
 

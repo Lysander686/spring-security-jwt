@@ -21,8 +21,6 @@ import java.util.Optional;
 
 /**
  * 用户认证服务
- *
- * @author star
  */
 @Service
 public class AuthService {
@@ -75,7 +73,6 @@ public class AuthService {
 
     /**
      * 用户退出登录
-     *
      * <p>
      * 清除 Spring Security 上下文中的认证信息
      */

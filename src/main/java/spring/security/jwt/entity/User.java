@@ -4,8 +4,6 @@ import javax.persistence.*;
 
 /**
  * User
- *
- * @author star
  */
 @Entity
 @Table(name = "user")
@@ -17,7 +15,7 @@ public class User extends AbstractAuditingEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "user_name", columnDefinition="varchar(30)", nullable = false, unique = true)
+    @Column(name = "user_name", columnDefinition = "varchar(30)", nullable = false, unique = true)
     private String userName;
 
     @Column(name = "nick_name", columnDefinition = "varchar(30)")

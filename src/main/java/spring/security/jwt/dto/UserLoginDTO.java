@@ -4,8 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
  * UserLoginDTO
- *
- * @author star
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserLoginDTO {

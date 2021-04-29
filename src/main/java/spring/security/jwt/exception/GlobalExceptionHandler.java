@@ -26,7 +26,6 @@ import java.util.stream.Collectors;
 
 /**
  * 全局异常处理器
- *
  * <p>
  * 将服务器端异常处理为客户端友好的 JSON 格式。
  */

@@ -6,8 +6,6 @@ import spring.security.jwt.constant.ErrorConstants;
 
 /**
  * AlreadyExistsException
- *
- * @author star
  */
 public class AlreadyExistsException extends AbstractThrowableProblem {
 

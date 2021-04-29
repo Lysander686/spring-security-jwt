@@ -20,8 +20,6 @@ import java.util.stream.Collectors;
 
 /**
  * UserService
- *
- * @author star
  */
 @Service
 public class UserService {

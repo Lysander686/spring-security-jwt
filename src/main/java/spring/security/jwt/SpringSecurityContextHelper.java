@@ -7,18 +7,11 @@ import org.springframework.stereotype.Component;
 
 /**
  * SpringSecurityContextHelper
- *
- * @author star
  */
 @Component
 public class SpringSecurityContextHelper implements ApplicationContextAware {
 
     private static ApplicationContext applicationContext;
-
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-       SpringSecurityContextHelper.applicationContext = applicationContext;
-    }
 
     /**
      * 根据一个 bean 的类型获取相应的 bean
@@ -28,5 +21,10 @@ public class SpringSecurityContextHelper implements ApplicationContextAware {
             return null;
         }
         return applicationContext.getBean(requiredType);
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        SpringSecurityContextHelper.applicationContext = applicationContext;
     }
 }
